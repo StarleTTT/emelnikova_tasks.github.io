@@ -1,0 +1,163 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+body{
+  background-image: url(./assets/background_art.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+.wrapper{
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  background: rgb(116, 92, 75);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+}
+.header_notif{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  min-width: 160px;
+  max-width: 160px;
+  position: relative;
+  width:160px;
+  height: 100px;
+  background: none;
+}
+.gold{
+  position: absolute;
+  top: 62%;
+  left: 23%;
+  width: 25%;
+  height: 40%;
+  border: 2px solid #333;
+  background: rgb(252, 228, 13);
+  border-radius: 50%;
+}
+.gold_2{
+  position: absolute;
+  top: 67%;
+  left: 26.15%;
+  width: 18.75%;
+  height: 30%;
+  border: 2px solid #333;
+  background: rgb(231, 175, 53);
+  border-radius: 50%;
+}
+.cap_brown{
+  position: absolute;
+  top: 22.5%;
+  left: 10%;
+  width: 67%;
+  height: 40%;
+  border: 2px solid #333;
+  background: rgb(207, 191, 166);
+  border-radius: 50%;
+  transform: rotate(-17deg);
+}
+.stem{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  height: 58%;
+  border: 2px solid #333;
+  background: rgb(214, 197, 172);
+  border-radius: 30%;
+  transform: rotate(-20deg);
+}
+.cap_red{
+  position: absolute;
+  top: 0%;
+  left: 19%;
+  width: 43%;
+  height: 70%;
+  border: 2px solid #333;
+  background: rgb(150, 41, 41);
+  border-radius: 5% 100% 5% 60%;
+  transform: rotate(115deg);
+}
+
+
+.navbar{
+  display: flex;
+  
+}
+.navbar_item{
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 50px;
+  width: 70 px;
+  background: #d6bba2;
+  border: 2px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+
+ 
+}
+.back{
+  background: rgba(116, 92, 75, 0.8);
+  margin: auto;
+}
+.content{
+  font-family: arial;
+  font-size: 18px;
+  flex: 1 1 auto;
+
+}
+.text{
+  padding: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+.sale{
+  border:  2px solid #333;
+  background-color:  rgb(150, 41, 41) ;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.covers__list {
+  margin: 0 auto;
+  padding: 40px, 40px;
+}
+.union {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 255px;
+  height: 420px;
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(144, 204, 244, 0) 0%, #BFB29E 100%);
+  border:  2px solid #333;
+}
+
+.footer{
+  background: rgb(116, 92, 75);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+}

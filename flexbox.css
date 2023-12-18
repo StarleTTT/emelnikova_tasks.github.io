@@ -1,0 +1,334 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+body{
+  background-image: url(./assets/background_art.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+.wrapper{
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  background: rgb(116, 92, 75);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+}
+.header_notif{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  min-width: 160px;
+  max-width: 160px;
+  position: relative;
+  width:160px;
+  height: 100px;
+  background: none;
+}
+.gold{
+  position: absolute;
+  top: 62%;
+  left: 23%;
+  width: 25%;
+  height: 40%;
+  border: 2px solid #333;
+  background: rgb(252, 228, 13);
+  border-radius: 50%;
+}
+.gold_2{
+  position: absolute;
+  top: 67%;
+  left: 26.15%;
+  width: 18.75%;
+  height: 30%;
+  border: 2px solid #333;
+  background: rgb(231, 175, 53);
+  border-radius: 50%;
+}
+.cap_brown{
+  position: absolute;
+  top: 22.5%;
+  left: 10%;
+  width: 67%;
+  height: 40%;
+  border: 2px solid #333;
+  background: rgb(207, 191, 166);
+  border-radius: 50%;
+  transform: rotate(-17deg);
+}
+.stem{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  height: 58%;
+  border: 2px solid #333;
+  background: rgb(214, 197, 172);
+  border-radius: 30%;
+  transform: rotate(-20deg);
+}
+.cap_red{
+  position: absolute;
+  top: 0%;
+  left: 19%;
+  width: 43%;
+  height: 70%;
+  border: 2px solid #333;
+  background: rgb(150, 41, 41);
+  border-radius: 5% 100% 5% 60%;
+  transform: rotate(115deg);
+}
+
+
+.navbar{
+  display: flex;
+  
+}
+.navbar_item{
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 50px;
+  width: 70 px;
+  background: #d6bba2;
+  border: 2px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+
+ 
+}
+.back{
+  background: rgba(116, 92, 75, 0.8);
+  margin: auto;
+}
+
+
+/*
+  Flex
+*/
+
+  body{
+    background-image: url(./assets/background_art.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover ;
+  }
+  .wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url('./assets/ware1.jpg');
+    background-size: contain;
+    overflow: hidden;
+    border:  2px solid #333;
+  }
+  .content:hover {
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url('./assets/ware2.jpg');
+    background-size: contain;
+    overflow: hidden;
+    border:  2px solid #333;
+  }
+  .pot{
+    position: absolute;
+    display: none;
+  }
+
+  .pot--grow{
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.2;
+    width: 70%;
+    height: 70%;
+    
+}
+@-webkit-keyframes pot--grow {
+
+  50%{
+    width: 90%;
+    left: 0px;
+    height: 90%;
+      opacity: 1;
+    }
+    100%{
+      left: 10px;
+      width: 70%;
+      height: 70%;
+        opacity: 0.2;
+      }
+}
+@keyframes pot--grow {
+  50%{
+    width: 90%;
+    left: 0px;
+    height: 90%;
+      opacity: 1;
+    }
+    100%{
+      left: 10px;
+      width: 70%;
+      height: 70%;
+        opacity: 0.2;
+      }
+  }
+  .content .pot--static{
+    display: none;
+  }
+  .content .lid{
+    display: none;
+  }
+  .content .text--h{
+    display: none;
+  }
+  .content .text--a{
+    display: none;
+  }
+  .content:hover .text--h{
+    display: block;
+    position: absolute;
+    font-weight: 800;
+    font-size:12px;
+    text-align: center;
+    padding-left: 65px;
+  }
+  .content:hover .text--a{
+    display: none;
+  }
+  .content:hover .pot--static{
+    display: none;
+  }
+  .content:hover .lid{ display: none;}
+  .content:hover .pot--grow {
+    display: block;
+    -webkit-animation: pot--grow 5s;
+        animation: pot--grow 5s;
+    -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+  }
+
+
+
+  @-webkit-keyframes move {
+
+    25%{
+      left: 4px;
+      }
+    50%{
+      left: 0px;
+        }
+    75%{
+      left: -4px;
+    }
+  }
+  @keyframes move {
+    25%{
+      left: 4px;
+      }
+    50%{
+      left: 0px;
+        }
+    75%{
+      left: -4px;
+    }
+    }
+
+  .content:active {
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url('./assets/ware2.jpg');
+    background-size: contain;
+    overflow: hidden;
+    border:  2px solid #333;
+    -webkit-animation: move 0.2s;
+    animation: move 0.2s;
+    -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+  }
+
+  .content:active .text--h{
+    display: none;
+  }
+  .content:active .text--a{
+    display: block;
+    position: absolute;
+    left: -55px;
+    bottom: 100px;
+    text-align: right;
+    font-weight: 800;
+    font-size:14px;
+    transform: rotate(-90deg);
+    color: red;
+  }
+  .content:active .pot--grow {
+    display: none;
+  }
+  .content:active .pot {
+    display: none;
+  }
+  .content:active .pot--static{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 70%;
+      height: 70%;
+  }
+
+ 
+  @-webkit-keyframes lid--move {
+
+    50%{
+      transform: rotate(-45deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes lid--move{
+    50%{
+      transform: rotate(-60deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+    .content:active .lid--move{
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      bottom: 48px;
+      left: 28px;
+      -webkit-animation: lid--move 0.5s;
+      animation: lid--move 0.5s;
+  -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
