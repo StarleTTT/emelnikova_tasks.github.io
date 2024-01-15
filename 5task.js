@@ -39,8 +39,8 @@ moveObjects.forEach(function(obj) {
 
     function drag(e) {
         if (isDragging) {
-            var newX = e.pageX - offset.x;
-            var newY = e.pageY - offset.y;
+            var newX = e.clientX - offset.x;
+            var newY = e.clientY - offset.y;
             newX = Math.max(0, Math.min(newX, content.getBoundingClientRect().left + content.offsetWidth - obj.offsetWidth)- content.getBoundingClientRect().left);
             newY = Math.max(0, Math.min(newY, content.getBoundingClientRect().top +content.offsetHeight - obj.offsetHeight) - content.getBoundingClientRect().top);
             obj.style.left = newX + "px";
